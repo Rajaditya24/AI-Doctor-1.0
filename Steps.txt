@@ -1,15 +1,39 @@
 # Setup and Run Instructions
 
+# Colab Setup
+
+# Step 0: Upload the .ipynb file to Google Colab and select T4 GPU as the runtime.
+
+# Step 1: Voice Module Configuration
+Fill in your Ngrok credentials and run the next cell for the voice module (STT and TTS).
+Copy the Ngrok link generated in the Colab output.
+
+# Step 2: Interface Configuration
+Paste the copied Ngrok link into the interface.py file and save the changes.
+
+# Note: The voice module will work only while the Colab notebook is running.
+Always use the latest Ngrok URL generated from the current Colab session.
+
+
+# Local Environment Setup
+
 # 1. Create a virtual environment
 python -m venv env
 
 # 2. Activate the environment
 env\Scripts\activate
 
-# 3. Install dependencies
+# 3. Set your Gemini API key in the environment
+set GEMINI_API_KEY=your_api_key_here
+setx GEMINI_API_KEY "your_api_key_here"
+
+# To verify:
+echo %GEMINI_API_KEY%
+
+# 4. Install dependencies
 pip install -r requirements.txt
 
-# 4. (Optional- No need) Upgrade pip and reinstall requirements
+# (Optional-No Need) Upgrade pip and reinstall dependencies
 python -m pip install --upgrade pip
 pip install --force-reinstall -r requirements.txt
 
@@ -18,4 +42,3 @@ cd medbot_1
 
 # 6. Run the application
 python app.py
-
