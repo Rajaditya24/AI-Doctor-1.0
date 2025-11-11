@@ -24,7 +24,7 @@ python -m venv env
 env\Scripts\activate
 
 # 3. Set your Gemini API key in the environment
-set GEMINI_API_KEY=your_api_key_here
+set GEMINI_API_KEY=your_api_key_here  or 
 setx GEMINI_API_KEY "your_api_key_here"
 
 # To verify:
@@ -42,3 +42,4 @@ cd medbot_1
 
 # 6. Run the application
 python app.py
+
