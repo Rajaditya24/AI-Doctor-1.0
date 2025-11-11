@@ -1,23 +1,21 @@
+# Setup and Run Instructions
 
-
+# 1. Create a virtual environment
 python -m venv env
 
+# 2. Activate the environment
+env\Scripts\activate
 
-env\scripts\activate
-
-
+# 3. Install dependencies
 pip install -r requirements.txt
 
-
+# 4. (Optional- No need) Upgrade pip and reinstall requirements
 python -m pip install --upgrade pip
 pip install --force-reinstall -r requirements.txt
 
+# 5. Navigate to the project directory
+cd medbot_1
 
-
-
-cd medbot_2
-
+# 6. Run the application
 python app.py
-
-
 
