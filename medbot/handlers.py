@@ -2,7 +2,7 @@ import logging
 from .model import ModelManager
 from .memory import MedicalMemoryManager
 
-# Configure logging
+# Configure logging 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
 
 model_manager = ModelManager()
@@ -144,4 +144,5 @@ def reset_chat():
     )
     
     logging.info("Session reset. New consultation started.")
+
     return [(None, reset_msg)], ""
