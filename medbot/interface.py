@@ -6,7 +6,7 @@ import sounddevice as sd
 import soundfile as sf
 import tempfile
 import io
-import numpy as np
+import numpy as np 
 from scipy.io.wavfile import write as wav_write
 
 from .handlers import respond, reset_chat
@@ -351,4 +351,5 @@ interface_instance = VoiceEnhancedInterface()
 
 
 def build_interface():
+
     return interface_instance.build_interface()
